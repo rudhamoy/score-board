@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.scoreboard__roundContainer {
+  padding: 2px;
+  margin: 3px;
+}
+
+.scoreboard__player {
+  display: flex;
+  gap: 10;
+}
+
+.scoreInput__container {
+  display: flex;
+  margin: 10px;
+  padding: 4px;
+  border: 1px solid gray;
+}

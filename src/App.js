@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Scoreboard from './components/Scoreboard';
+import TeamList from './components/TeamList';
 
 function App() {
+  const [teams, setTeams] = useState([])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="" style={{ maxWidth: '800px', margin: "auto", padding: "20px", display: "flex", justifyContent: "space-evenly" }}>
+      <TeamList teams={teams} setTeams={setTeams} />
+      <Scoreboard teams={teams} setTeams={setTeams} />
     </div>
   );
 }
